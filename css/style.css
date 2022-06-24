@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'get_schwifty';
+    src: url('../font/get_schwifty.ttf');
+}
+
+
+/* home page */
+
+.logo-alura {
+
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 37px;
+    height: 53px;
+    animation: float infinite 5s ease-in-out;
+
+}
+
+.title {
+
+    position: relative;
+    display: flex;
+    font-family: 'get_schwifty';
+    font-size: 90px;
+    -webkit-text-stroke: 0.5px rgb(132, 195, 8);
+    text-shadow: 2px 10px 8px;
+    color: rgb(45, 135, 135);
+    margin-left: 400px;
+    margin-top: 20px;
+    transform-style: preserve-3d;
+
+}
+
+.content {
+
+    box-sizing: border-box;
+    justify-content: center;
+    width: 50rem;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30rem;
+    border: double 4px rgb(117, 220, 220);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgb(0, 255, 255);
+}
+
+
+
+.content img {
+    width: 450px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-right: auto;
+    margin-left: 200px;
+
+}
+
+.startbtn {
+    width: 140px;
+    height: 50px;
+    background: none;
+    font-family: 'get_schwifty';
+    font-size: 35px;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 100px;
+    border: none;
+    border-radius: 8px;
+}
+
+.startbtn a {
+
+    background: none;
+    text-decoration: none;
+    color: rgb(129, 229, 8);
+    -webkit-text-stroke: 0.5px black;
+}
+
+.startbtn:hover {
+    box-shadow: 0 0 10px 0 rgb(145, 235, 9), 0 0 10px 4px rgb(8, 203, 203);
+    background: rgb(40, 147, 124);
+    transition: 1s;
+}
+
+.bottom {
+    margin-top: 40px;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+
+}
+
+.bottom img {
+
+    width: 50px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.bottom a {
+    background: none;
+    color: rgb(23, 188, 161);
+    text-decoration: none;
+}
+
+/* Animação */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translatey(0);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+}

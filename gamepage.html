@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-game.css" media="screen" />
+    <link rel="shortcut icon" type="image/icon" href="images/evilmorty.png" />
+    <title>Jogo da forca</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="images"></div>
+
+        <div id="secret-word"></div>
+
+        <div id="keybord">
+            <div class="keys">
+                <button id="key-A" onclick="verifyChoosedLetter('A')">A</button>
+                <button id="key-B" onclick="verifyChoosedLetter('B')">B</button>
+                <button id="key-C" onclick="verifyChoosedLetter('C')">C</button>
+                <button id="key-D" onclick="verifyChoosedLetter('D')">D</button>
+                <button id="key-E" onclick="verifyChoosedLetter('E')">E</button>
+                <button id="key-F" onclick="verifyChoosedLetter('F')">F</button>
+                <button id="key-G" onclick="verifyChoosedLetter('G')">G</button>
+                <button id="key-H" onclick="verifyChoosedLetter('H')">H</button>
+                <button id="key-I" onclick="verifyChoosedLetter('I')">I</button>
+            </div>
+
+            <div class="keys">
+                <button id="key-J" onclick="verifyChoosedLetter('J')">J</button>
+                <button id="key-K" onclick="verifyChoosedLetter('K')">K</button>
+                <button id="key-L" onclick="verifyChoosedLetter('L')">L</button>
+                <button id="key-M" onclick="verifyChoosedLetter('M')">M</button>
+                <button id="key-N" onclick="verifyChoosedLetter('N')">N</button>
+                <button id="key-O" onclick="verifyChoosedLetter('O')">O</button>
+                <button id="key-P" onclick="verifyChoosedLetter('P')">P</button>
+                <button id="key-Q" onclick="verifyChoosedLetter('Q')">Q</button>
+                <button id="key-R" onclick="verifyChoosedLetter('R')">R</button>
+            </div>
+
+            <div class="keys">
+                <button id="key-S" onclick="verifyChoosedLetter('S')">S</button>
+                <button id="key-T" onclick="verifyChoosedLetter('T')">T</button>
+                <button id="key-U" onclick="verifyChoosedLetter('U')">U</button>
+                <button id="key-V" onclick="verifyChoosedLetter('V')">V</button>
+                <button id="key-W" onclick="verifyChoosedLetter('W')">W</button>
+                <button id="key-X" onclick="verifyChoosedLetter('X')">X</button>
+                <button id="key-Y" onclick="verifyChoosedLetter('Y')">Y</button>
+                <button id="key-Z" onclick="verifyChoosedLetter('Z')">Z</button>
+                <button id="btnNewGame">🎮</button>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&#10006;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="modalBody"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="refreshPage()">
+                            Jogar de novo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End modal -->
+        <div id="clue"></div>
+        <button class="giveup" id="giveup" tabindex="-1"><a href="index.html">Desistir</a></button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
